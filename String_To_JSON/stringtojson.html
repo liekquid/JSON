@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>String to Json Student details</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"student":[' +
+'{"firstName":"akash","lastName":"dev","div":"TE" },' +
+'{"firstName":"Aman","lastName":"Shah","div":"TE" },' +
+'{"firstName":"Parth","lastName":"Jani","div":"TE" }]}';
+
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.student[1].firstName + " " + obj.student[1].lastName+ " " + obj.student[1].div;
+</script>
+
+</body>
+</html>
